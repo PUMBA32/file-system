@@ -12,13 +12,8 @@ class Initialize - ищет в root.json путь до родительской 
 from initialize import Initialize
 
 
-
 def main() -> None:
-    init: Initialize = Initialize()
-
-    if not init.search_root():
-        init.set_new_root()
-    
+    init: Initialize = Initialize()    
     init.start()
 
 
