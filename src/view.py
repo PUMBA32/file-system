@@ -29,7 +29,16 @@ class View:
         print(f'file: {filename}')
         print("[1] - delete file")
         print("[2] - read file")
-        print("[3] - change file")
-        print("[4] - back") 
+        print("...") 
+
+    
+    @staticmethod
+    def help() -> None: 
+        View.cls()
+        print("1. add file <filename> - creating new empty file with any extension")
+        print("2. add folder <foldername> - creating new empty folder with any extension")
+        print("3. exit - exit from program")
+        print("...")
+        input()
 
         
